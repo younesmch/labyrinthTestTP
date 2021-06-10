@@ -21,7 +21,9 @@ public class right implements state {
     public void go_up() {
        
             //go to next pos
+        
             Lookup.getInstance().getService(publisher.class).setState(1);
+           ctx.setState(ctx.getupState());
       
     }
 
